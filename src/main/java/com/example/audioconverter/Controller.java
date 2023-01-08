@@ -1,55 +1,61 @@
 package com.example.audioconverter;
 
-import javafx.fxml.FXML;
-import javafx.scene.control.Label;
-
+import java.io.File;
 import java.net.URL;
+import java.util.Arrays;
+import java.util.List;
 import java.util.ResourceBundle;
+
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import javafx.scene.control.CheckBox;
-import javafx.scene.control.ChoiceBox;
-import javafx.scene.control.Label;
+import javafx.scene.control.RadioButton;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.ToggleGroup;
 
-    public class Controller {
+public class Controller {
 
-        @FXML
-        private ResourceBundle resources;
+    @FXML
+    private ResourceBundle resources;
 
-        @FXML
-        private URL location;
+    @FXML
+    private URL location;
 
-        @FXML
-        private CheckBox checkBox1;
+    @FXML
+    private Button multiFileButton;
 
-        @FXML
-        private CheckBox checkBox2;
+    @FXML
+    private Button oneFileButton;
 
-        @FXML
-        private CheckBox checkBox3;
+    @FXML
+    private ToggleGroup rButtons;
 
-        @FXML
-        private ChoiceBox<?> choiceBox1;
+    @FXML
+    private RadioButton rb1;
 
-        @FXML
-        private ChoiceBox<?> choiceBox2;
+    @FXML
+    private RadioButton rb2;
 
-        @FXML
-        private Label progressBar;
+    @FXML
+    private RadioButton rb3;
 
-        @FXML
-        private Button startButton;
+    @FXML
+    private RadioButton rb4;
 
-        @FXML
-        void initialize() {
-            assert checkBox1 != null : "fx:id=\"checkBox1\" was not injected: check your FXML file 'hello-view.fxml'.";
-            assert checkBox2 != null : "fx:id=\"checkBox2\" was not injected: check your FXML file 'hello-view.fxml'.";
-            assert checkBox3 != null : "fx:id=\"checkBox3\" was not injected: check your FXML file 'hello-view.fxml'.";
-            assert choiceBox1 != null : "fx:id=\"choiceBox1\" was not injected: check your FXML file 'hello-view.fxml'.";
-            assert choiceBox2 != null : "fx:id=\"choiceBox2\" was not injected: check your FXML file 'hello-view.fxml'.";
-            assert progressBar != null : "fx:id=\"progressBar\" was not injected: check your FXML file 'hello-view.fxml'.";
-            assert startButton != null : "fx:id=\"startButton\" was not injected: check your FXML file 'hello-view.fxml'.";
+    @FXML
+    private RadioButton rb5;
 
-        }
+    @FXML
+    private Button startButton;
+
+    @FXML
+    private TextArea textArea;
+
+    @FXML
+    void initialize() {
+        oneFileButton.setOnAction (actionEvent -> E)
 
     }
+
+}
